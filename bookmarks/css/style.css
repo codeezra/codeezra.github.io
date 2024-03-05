@@ -11,6 +11,9 @@ body {
 a {
   color: #706fd3;
 }
+a:hover {
+  color: #ff6347;
+}
 .bold {
   font-family: PT Sans Bold;
 }
