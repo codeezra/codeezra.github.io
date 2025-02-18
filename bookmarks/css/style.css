@@ -59,7 +59,7 @@ main {
 .container {
   width: 100%;
   max-width: 960px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .list {
   display: grid;
