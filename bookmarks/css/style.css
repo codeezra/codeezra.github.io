@@ -1,3 +1,4 @@
+@import url(../fonts/Manrope/Manrope.css);
 * {
   box-sizing: border-box;
 }
@@ -5,7 +6,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  font-family: PT Sans Regular;
+  font-family: "Manrope";
+  font-size: 14px;
   color: #adadad;
 }
 a {
@@ -15,13 +17,7 @@ a:hover {
   color: #706fd3;
 }
 .bold {
-  font-family: PT Sans Bold;
-}
-.italic {
-  font-family: PT Sans Italic;
-}
-.bold-italic {
-  font-family: PT Sans Bold Italic;
+  font-family: "Manrope Extrabold";
 }
 .uppercase {
   text-transform: uppercase;
