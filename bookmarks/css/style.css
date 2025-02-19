@@ -1,4 +1,9 @@
 @import url(../fonts/Manrope/Manrope.css);
+:root {
+  --regularFont: "Manrope";
+  --boldFont: "Manrope Bold";
+  --extraBoldFont: "Manrope Extrabold";
+}
 * {
   box-sizing: border-box;
 }
@@ -6,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  font-family: "Manrope";
+  font-family: var(--regularFont);
   font-size: 14px;
   color: #adadad;
 }
@@ -17,10 +22,10 @@ a:hover {
   color: #706fd3;
 }
 .bold {
-  font-family: "Manrope Bold";
+  font-family: var(--boldFont);
 }
 .extra-bold {
-  font-family: "Manrope Extrabold";
+  font-family: var(--extraBoldFont);
 }
 .uppercase {
   text-transform: uppercase;
@@ -35,10 +40,10 @@ header > div {
   max-width: 960px;
   display: flex;
   gap: 20px;
-  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 header > div > div {
-  flex: 1;
   display: flex;
 }
 header > div > div:nth-child(1) {
@@ -50,6 +55,64 @@ header > div > div:nth-child(2) {
 header .ico {
   width: 20px;
   height: 20px;
+}
+.header-filter {
+  position: relative;
+  width: 170px;
+}
+.header-filter input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23adadad' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: 18px;
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+  background-color: #191919;
+  color: inherit;
+  font-family: var(--regularFont);
+  font-size: inherit;
+  padding: 12px 42px 12px 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.header-filter input::placeholder {
+  font-family: var(--regularFont);
+  color: inherit;
+}
+.header-filter.active input {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23adadad' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-up'%3E%3Cpolyline points='18 15 12 9 6 15'%3E%3C/polyline%3E%3C/svg%3E");
+}
+.header-filter > div {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #191919;
+  padding-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #121212;
+}
+.header-filter.active > div {
+  display: block;
+}
+.header-filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-filter ul li {
+  padding: 12px;
+  cursor: pointer;
+}
+.header-filter ul li:hover {
+  background-color: #706fd3;
+}
+.header-filter ul li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 main {
   display: flex;
@@ -75,6 +138,9 @@ main {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px 0#0d234308;
+}
+.list-item.hide {
+  display: none;
 }
 .list-item > div:nth-child(1) {
   font-size: 18px;
