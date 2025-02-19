@@ -45,6 +45,7 @@ header > div {
 }
 header > div > div {
   display: flex;
+  align-items: center;
 }
 header > div > div:nth-child(1) {
   gap: 10px;
