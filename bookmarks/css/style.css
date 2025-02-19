@@ -166,18 +166,23 @@ main {
 }
 /* list-item styles */
 .lis1 {
+  background-color: rgba(255, 190, 11, 0.1);
   border-left: 5px solid rgba(255, 190, 11, 0.5);
 }
 .lis2 {
+  background-color: rgba(251, 86, 7, 0.1);
   border-left: 5px solid rgba(251, 86, 7, 0.5);
 }
 .lis3 {
+  background-color: rgba(255, 0, 110, 0.1);
   border-left: 5px solid rgba(255, 0, 110, 0.5);
 }
 .lis4 {
+  background-color: rgba(131, 56, 236, 0.1);
   border-left: 5px solid rgba(131, 56, 236, 0.5);
 }
 .lis5 {
+  background-color: rgba(58, 134, 255, 0.1);
   border-left: 5px solid rgba(58, 134, 255, 0.5);
 }
 /* media */
