@@ -16,10 +16,8 @@ body {
   color: #adadad;
 }
 a {
-  color: #adadad;
-}
-a:hover {
   color: #706fd3;
+  text-decoration: none;
 }
 .bold {
   font-family: var(--boldFont);
