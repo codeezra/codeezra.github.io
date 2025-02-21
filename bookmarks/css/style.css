@@ -141,9 +141,6 @@ main {
 .list-item.hide {
   display: none;
 }
-.list-item > div:nth-child(1) {
-  font-size: 18px;
-}
 .list-item > div:nth-child(2) {
   display: flex;
   flex-direction: column;
